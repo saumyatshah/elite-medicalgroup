@@ -1,0 +1,10 @@
+{
+  // Static site served by Cloudflare Workers Static Assets.
+  // There is no build step and no Worker script -- every request is served
+  // from the files in this repository.
+  "name": "elite-medicalgroup",
+  "compatibility_date": "2026-09-26",
+  "assets": {
+    "directory": "./"
+  }
+}
