@@ -8,7 +8,7 @@ Family medicine, internal medicine, hospital medicine, and critical care with Dr
 
 - **Address** 150 Alfredo Drive, Suite A, Clarksville, TN 37042
 - **Phone** 931-271-7373
-- **Email** elitemedgroupofclarksville@outlook.com
+- **Email** staff@elite-medicalgroup.com
 - **Hours** Monday – Friday, 8:00 am – 5:00 pm (closed for lunch 12–1 pm)
 
 ## Stack
@@ -36,5 +36,5 @@ Changes here that are not yet on `elite-medgroup.com`:
 - Physician tenure stated as *since 2009* / *since 2007*; credentials simplified to "Board-Certified, Family Medicine" / "Internal Medicine".
 - Family medicine described as "from 12 and up"; Internal Medicine and Hospital Medicine descriptions shortened.
 - Contact hours add the 12–1 pm lunch closure; the "After hours — Partner on-call" row and the "long memory" pull-quote are commented out.
-- Email corrected to `elitemedgroupofclarksville@outlook.com`.
+- Email corrected to `staff@elite-medicalgroup.com`.
 - Floating appointment-booking button (scheduling vendor iframe) in addition to the hero link.
