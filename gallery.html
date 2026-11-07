@@ -8,12 +8,45 @@
 <link rel="canonical" href="https://elite-medicalgroup.com/gallery" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+<!-- Fonts (Fraunces and Newsreader) are stored on this site in assets/fonts so they arrive sooner.
+     They are not preloaded on this page so the first photo can download first. -->
 
 <style>
   /* Shared site styles below are copied from index.html; keep them in step if the main page changes. */
+  @font-face{font-family:'Fraunces';font-style:italic;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-italic-vietnamese-v38.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Fraunces';font-style:italic;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-italic-latin-ext-v38.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Fraunces';font-style:italic;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-italic-latin-v38.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces';font-style:normal;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-normal-vietnamese-v38.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Fraunces';font-style:normal;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-normal-latin-ext-v38.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Fraunces';font-style:normal;font-weight:300 900;font-display:swap;src:url(assets/fonts/fraunces-normal-latin-v38.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-italic-vietnamese-v26.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-italic-latin-ext-v26.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-italic-latin-v26.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-normal-vietnamese-v26.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-normal-latin-ext-v26.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-normal-latin-v26.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  /* Backup fonts, resized to take up the same space as Fraunces and Newsreader, so the page does not
+     jump when the real fonts finish loading. G = Georgia (Windows, Mac, iPhone), N = Noto Serif (Android),
+     T = Times New Roman / Liberation Serif (Linux). "Display" is for big headings, where Fraunces is narrower. */
+  @font-face{font-family:'Fraunces Fallback G';font-style:normal;font-weight:100 900;src:local('Georgia');size-adjust:102.00%;ascent-override:95.88%;descent-override:25.00%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Fallback N';font-style:normal;font-weight:100 900;src:local('Noto Serif'),local('NotoSerif-Regular');size-adjust:94.54%;ascent-override:103.45%;descent-override:26.97%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Fallback T';font-style:normal;font-weight:100 900;src:local('Times New Roman'),local('TimesNewRomanPSMT'),local('Liberation Serif'),local('LiberationSerif');size-adjust:105.00%;ascent-override:93.14%;descent-override:24.29%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Fallback G';font-style:italic;font-weight:100 900;src:local('Georgia Italic'),local('Georgia-Italic');size-adjust:97.00%;ascent-override:100.82%;descent-override:26.29%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Fallback N';font-style:italic;font-weight:100 900;src:local('Noto Serif Italic'),local('NotoSerif-Italic');size-adjust:89.90%;ascent-override:108.79%;descent-override:28.36%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Fallback T';font-style:italic;font-weight:100 900;src:local('Times New Roman Italic'),local('TimesNewRomanPS-ItalicMT'),local('Liberation Serif Italic'),local('LiberationSerif-Italic');size-adjust:108.00%;ascent-override:90.56%;descent-override:23.61%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback G';font-style:normal;font-weight:100 900;src:local('Georgia');size-adjust:82.50%;ascent-override:118.55%;descent-override:30.91%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback N';font-style:normal;font-weight:100 900;src:local('Noto Serif'),local('NotoSerif-Regular');size-adjust:76.46%;ascent-override:127.91%;descent-override:33.35%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback T';font-style:normal;font-weight:100 900;src:local('Times New Roman'),local('TimesNewRomanPSMT'),local('Liberation Serif'),local('LiberationSerif');size-adjust:91.50%;ascent-override:106.89%;descent-override:27.87%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback G';font-style:italic;font-weight:100 900;src:local('Georgia Italic'),local('Georgia-Italic');size-adjust:73.50%;ascent-override:133.06%;descent-override:34.69%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback N';font-style:italic;font-weight:100 900;src:local('Noto Serif Italic'),local('NotoSerif-Italic');size-adjust:68.12%;ascent-override:143.57%;descent-override:37.43%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Fraunces Display Fallback T';font-style:italic;font-weight:100 900;src:local('Times New Roman Italic'),local('TimesNewRomanPS-ItalicMT'),local('Liberation Serif Italic'),local('LiberationSerif-Italic');size-adjust:81.00%;ascent-override:120.74%;descent-override:31.48%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback G';font-style:normal;font-weight:100 900;src:local('Georgia');size-adjust:91.00%;ascent-override:80.77%;descent-override:29.12%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback N';font-style:normal;font-weight:100 900;src:local('Noto Serif'),local('NotoSerif-Regular');size-adjust:84.34%;ascent-override:87.15%;descent-override:31.42%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback T';font-style:normal;font-weight:100 900;src:local('Times New Roman'),local('TimesNewRomanPSMT'),local('Liberation Serif'),local('LiberationSerif');size-adjust:99.00%;ascent-override:74.24%;descent-override:26.77%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback G';font-style:italic;font-weight:100 900;src:local('Georgia Italic'),local('Georgia-Italic');size-adjust:89.00%;ascent-override:82.58%;descent-override:29.78%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback N';font-style:italic;font-weight:100 900;src:local('Noto Serif Italic'),local('NotoSerif-Italic');size-adjust:82.49%;ascent-override:89.11%;descent-override:32.13%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader Fallback T';font-style:italic;font-weight:100 900;src:local('Times New Roman Italic'),local('TimesNewRomanPS-ItalicMT'),local('Liberation Serif Italic'),local('LiberationSerif-Italic');size-adjust:105.00%;ascent-override:70.00%;descent-override:25.24%;line-gap-override:0%;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
   :root{
     --paper:#f1e8d6;
     --paper-deep:#e8dcc1;
@@ -29,9 +62,10 @@
     --gold:#a88347;
     --hairline:rgba(26,24,20,.18);
     --hairline-2:rgba(26,24,20,.35);
-    --serif-display:'Fraunces', 'Iowan Old Style', Georgia, serif;
-    --serif-body:'Newsreader', 'Iowan Old Style', Georgia, serif;
+    --serif-display:'Fraunces', 'Fraunces Fallback G', 'Fraunces Fallback N', 'Fraunces Fallback T', 'Iowan Old Style', Georgia, serif;
+    --serif-body:'Newsreader', 'Newsreader Fallback G', 'Newsreader Fallback N', 'Newsreader Fallback T', 'Iowan Old Style', Georgia, serif;
   }
+  h1,h2{--serif-display:'Fraunces', 'Fraunces Display Fallback G', 'Fraunces Display Fallback N', 'Fraunces Display Fallback T', 'Iowan Old Style', Georgia, serif;}
 
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
@@ -306,9 +340,10 @@
     font-style:normal;font-weight:500;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
     color:var(--rust);margin-right:8px;
   }
-  .g-item[role="button"]{cursor:zoom-in;}
-  .g-item[role="button"]:hover img{transform:scale(1.04);}
-  .g-item:focus-visible{outline:2px solid var(--forest);outline-offset:4px;}
+  .g-item.viewable{cursor:zoom-in;}
+  .g-item.viewable:hover img{transform:scale(1.04);}
+  .g-item:has(img:focus-visible){outline:2px solid var(--forest);outline-offset:4px;}
+  .g-item img:focus-visible{outline:none;}
   @media (max-width:860px){.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:14px;}}
   @media (max-width:480px){
     .gallery-grid{grid-auto-rows:130px;gap:10px;}
@@ -387,8 +422,8 @@
     font-size:24px;letter-spacing:.02em;color:var(--paper);
   }
   .footer p.f-about{font-size:15px;line-height:1.65;color:rgba(241,232,214,.72);max-width:42ch;}
-  .footer h4{
-    font-family:var(--serif-display);font-weight:500;
+  .footer h2{
+    font-family:var(--serif-display);font-weight:500;font-variation-settings:normal;
     font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#f4d9b5;
     margin-bottom:18px;
   }
@@ -444,7 +479,7 @@
       <a href="index.html#services">Services</a>
       <a href="index.html#patients">Patients</a>
     </div>
-    <a class="brand-mark" href="index.html" aria-label="Elite Medical Group home">
+    <a class="brand-mark" href="index.html">
       <svg viewBox="0 0 100 100" aria-hidden="true">
         <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
         <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" stroke-width=".5"/>
@@ -465,6 +500,8 @@
     </div>
   </div>
 </nav>
+
+<main id="main">
 
 <!-- PAGE HEAD -->
 <section class="page-head">
@@ -572,7 +609,7 @@
   <div class="wrap">
     <div class="gallery-grid">
       <figure class="g-item wide tall reveal">
-        <img src="assets/gallery/IMG_3150.jpeg" alt="Waiting room with rows of chairs, wood-look floors, and floor-to-ceiling windows facing the parking lot" loading="lazy" onerror="this.remove()" />
+        <img src="assets/gallery/IMG_3150.jpeg" alt="Waiting room with rows of chairs, wood-look floors, and floor-to-ceiling windows facing the parking lot" fetchpriority="high" onerror="this.remove()" />
         <figcaption><span>Fig. 01</span>Waiting room</figcaption>
       </figure>
       <figure class="g-item wide tall reveal reveal-delay-1">
@@ -609,6 +646,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="wrap">
@@ -628,7 +667,7 @@
         </p>
       </div>
       <div>
-        <h4>The Practice</h4>
+        <h2>The Practice</h2>
         <ul>
           <li><a href="index.html#practice">About</a></li>
           <li><a href="index.html#physicians">Physicians</a></li>
@@ -638,7 +677,7 @@
         </ul>
       </div>
       <div>
-        <h4>Visit</h4>
+        <h2>Visit</h2>
         <ul>
           <li>150 Alfredo Drive, Suite A</li>
           <li>Clarksville, TN 37042</li>
@@ -647,7 +686,7 @@
         </ul>
       </div>
       <div>
-        <h4>Patients</h4>
+        <h2>Patients</h2>
         <ul>
           <li>Now accepting new patients</li>
           <li>Medicare &amp; TennCare accepted</li>
@@ -695,7 +734,7 @@
     const items = [...document.querySelectorAll('.g-item')];
     let current = -1, lastFocus = null;
 
-    const viewable = () => items.filter(it => it.hasAttribute('role'));
+    const viewable = () => items.filter(it => it.classList.contains('viewable'));
 
     const show = (item) => {
       const img = item.querySelector('img');
@@ -727,16 +766,18 @@
     items.forEach(item => {
       const img = item.querySelector('img');
       if (!img) return;
+      // the photo itself acts as the button (a <figure> is not allowed to have a button role)
       const enable = () => {
-        item.setAttribute('role', 'button');
-        item.tabIndex = 0;
-        item.setAttribute('aria-label', 'View larger: ' + (img.alt || 'photo'));
+        item.classList.add('viewable');
+        img.setAttribute('role', 'button');
+        img.tabIndex = 0;
+        img.setAttribute('aria-label', 'View larger: ' + (img.alt || 'photo'));
       };
       if (img.complete && img.naturalWidth) enable();
       else img.addEventListener('load', enable, {once:true});
-      item.addEventListener('click', () => { if (item.hasAttribute('role')) open(item); });
+      item.addEventListener('click', () => { if (item.classList.contains('viewable')) open(item); });
       item.addEventListener('keydown', e => {
-        if ((e.key === 'Enter' || e.key === ' ') && item.hasAttribute('role')) { e.preventDefault(); open(item); }
+        if ((e.key === 'Enter' || e.key === ' ') && item.classList.contains('viewable')) { e.preventDefault(); open(item); }
       });
     });
 
