@@ -6,7 +6,9 @@
 <title>Gallery — Elite Medical Group, Clarksville, Tennessee</title>
 <meta name="description" content="Photos of Elite Medical Group, a primary care practice in Clarksville, Tennessee, from the waiting room to the exam rooms." />
 <link rel="canonical" href="https://elite-medicalgroup.com/gallery" />
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
 <!-- Fonts (Fraunces and Newsreader) are stored on this site in assets/fonts so they arrive sooner.
      They are not preloaded on this page so the first photo can download first. -->
@@ -175,7 +177,7 @@
   .nav-links a[aria-current="page"]::after{transform:scaleX(1);}
 
   .brand-mark{justify-self:center;display:flex;align-items:center;gap:10px;}
-  .brand-mark svg{width:44px;height:44px;color:var(--forest);}
+  .brand-mark .brand-logo{height:52px;width:auto;}
   .brand-mark .brand-name{
     font-family:var(--serif-display);font-weight:420;
     font-variation-settings:"opsz" 48, "SOFT" 40;
@@ -212,7 +214,7 @@
     .nav-inner{grid-template-columns:auto 1fr auto;gap:16px;padding:16px 22px;}
     .nav-links{display:none;}
     .brand-mark{justify-self:start;}
-    .brand-mark svg{width:34px;height:34px;}
+    .brand-mark .brand-logo{height:33px;}
     .brand-mark .brand-name{font-size:18px;}
     .nav-cta .phone{display:none;}
   }
@@ -322,6 +324,8 @@
   }
   .g-item.wide{grid-column:span 2;}
   .g-item.tall{grid-row:span 2;}
+  .g-item.full{grid-column:1 / -1;grid-row:span 3;}
+  @media (max-width:480px){.g-item.full{grid-row:span 2;}}
   .g-item img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
     transition:transform 1s cubic-bezier(.7,0,.2,1);
@@ -415,7 +419,7 @@
   }
   .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:2;}
   .footer .fmark{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
-  .footer .fmark svg{width:48px;height:48px;color:#f4d9b5;}
+  .footer .fmark .flogo{width:60px;height:60px;padding:8px;background:var(--paper);border-radius:50%;object-fit:contain;}
   .footer .fmark .name{
     font-family:var(--serif-display);font-weight:420;
     font-variation-settings:"opsz" 48, "SOFT" 40;
@@ -431,6 +435,7 @@
   .footer a{color:rgba(241,232,214,.82);font-size:14.5px;}
   .footer a:hover{color:#f4d9b5;}
   .footer .f-email{word-break:break-word;font-size:13.5px;}
+  .footer .f-fax{font-size:14.5px;color:rgba(241,232,214,.82);}
   .footer-bottom{
     margin-top:72px;padding-top:24px;
     border-top:1px solid rgba(241,232,214,.18);
@@ -480,14 +485,7 @@
       <a href="index.html#patients">Patients</a>
     </div>
     <a class="brand-mark" href="index.html">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
-        <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" stroke-width=".5"/>
-        <text x="50" y="56" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="400" fill="currentColor">EMG</text>
-        <text x="50" y="75" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="5" letter-spacing="1.5" fill="currentColor">CLARKSVILLE · TN</text>
-        <path d="M18 50 L24 50" stroke="currentColor" stroke-width="0.8"/>
-        <path d="M76 50 L82 50" stroke="currentColor" stroke-width="0.8"/>
-      </svg>
+      <img class="brand-logo" src="assets/logo-mark.png" alt="" width="200" height="192" />
       <span class="brand-name">Elite Medical Group</span>
     </a>
     <div class="nav-cta">
@@ -517,14 +515,10 @@
   </div>
 </section>
 
-<!-- STAFF SECTION IS HIDDEN until staff names and photos are ready.
-  To show it, delete the <template> line just below and the </template> line after the staff section,
-  and add the "Our Staff" link back to the footer. -->
-<template id="staff-section">
 <!-- STAFF
-  To add a staff member: put their photo in assets/staff/ (a portrait-shaped photo works best),
-  then copy one <figure class="staff-card"> block and change the photo path, alt text, name and role.
-  Delete any placeholder cards you don't need. The role line is optional; delete it if you only want names.
+  To add a staff member: put their photo in assets/staff/, cropped to a 4:5 portrait about 600x750 pixels
+  (a full-size phone photo is several megabytes and slows the page), then copy one <figure class="staff-card">
+  block and change the photo path, alt text, name and role. The role line is optional.
   Until a photo file exists at the given path, the card shows a plain silhouette.
 -->
 <section class="staff" id="staff">
@@ -537,96 +531,66 @@
 
     <div class="staff-grid">
       <figure class="staff-card reveal">
-        <div class="staff-photo"><img src="assets/staff/staff-01.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
+        <div class="staff-photo"><img src="assets/staff/parth-shah.jpg" alt="Dr. Parth Shah standing in an exam room" width="600" height="750" onerror="this.remove()" /></div>
         <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
+          <div class="staff-name">Dr. Parth Shah</div>
+          <div class="staff-role">Physician · Family Medicine</div>
         </figcaption>
       </figure>
       <figure class="staff-card reveal reveal-delay-1">
-        <div class="staff-photo"><img src="assets/staff/staff-02.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
+        <div class="staff-photo"><img src="assets/staff/pankaj-shah.jpg" alt="Dr. Pankaj Shah in a white coat in the office hallway" width="600" height="750" onerror="this.remove()" /></div>
         <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
+          <div class="staff-name">Dr. Pankaj Shah</div>
+          <div class="staff-role">Physician · Internal Medicine</div>
         </figcaption>
       </figure>
       <figure class="staff-card reveal reveal-delay-2">
-        <div class="staff-photo"><img src="assets/staff/staff-03.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
+        <div class="staff-photo"><img src="assets/staff/yanelys-martinez.jpg" alt="Yanelys Martinez, Medical Assistant, at the front desk" width="600" height="750" onerror="this.remove()" /></div>
         <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
-        </figcaption>
-      </figure>
-      <figure class="staff-card reveal reveal-delay-3">
-        <div class="staff-photo"><img src="assets/staff/staff-04.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
-        <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
-        </figcaption>
-      </figure>
-      <figure class="staff-card reveal">
-        <div class="staff-photo"><img src="assets/staff/staff-05.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
-        <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
-        </figcaption>
-      </figure>
-      <figure class="staff-card reveal reveal-delay-1">
-        <div class="staff-photo"><img src="assets/staff/staff-06.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
-        <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
-        </figcaption>
-      </figure>
-      <figure class="staff-card reveal reveal-delay-2">
-        <div class="staff-photo"><img src="assets/staff/staff-07.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
-        <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
-        </figcaption>
-      </figure>
-      <figure class="staff-card reveal reveal-delay-3">
-        <div class="staff-photo"><img src="assets/staff/staff-08.jpg" alt="Staff Name" loading="lazy" onerror="this.remove()" /></div>
-        <figcaption>
-          <div class="staff-name">Staff Name</div>
-          <div class="staff-role">Position</div>
+          <div class="staff-name">Yanelys Martinez</div>
+          <div class="staff-role">Medical Assistant</div>
         </figcaption>
       </figure>
     </div>
   </div>
 </section>
-</template>
 
 <!-- GALLERY
   To add a photo: put it in assets/gallery/, then copy one <figure class="g-item"> block and change the
   photo path (spelled exactly like the file name), alt text and caption.
   Every photo is cropped to fill its tile. Add class "wide" to a tile to make it two columns wide
   and "tall" to make it two rows tall; "wide tall" suits landscape photos and "tall" suits portrait ones.
+  Class "full" makes a tile span the whole width (used for the outside photo at the top).
+  Shrink new photos before adding them (about 1280 pixels wide); full-size phone photos are several megabytes.
   The grid has four columns, so keep the tile widths in each row adding up to four to avoid gaps.
   Visitors can click any photo to see it larger.
 -->
 <section class="gallery" id="photos">
   <div class="wrap">
     <div class="gallery-grid">
+      <figure class="g-item full reveal">
+        <img src="assets/gallery/IMG_3146.jpeg" alt="Front of the Elite Medical Group office: a brick building with the practice name in blue letters above a glass entrance, facing the parking lot" loading="lazy" onerror="this.remove()" />
+        <figcaption><span>Fig. 01</span>Our office on Alfredo Drive</figcaption>
+      </figure>
       <figure class="g-item wide tall reveal">
-        <img src="assets/gallery/IMG_3150.jpeg" alt="Waiting room with rows of chairs, wood-look floors, and floor-to-ceiling windows facing the parking lot" fetchpriority="high" onerror="this.remove()" />
-        <figcaption><span>Fig. 01</span>Waiting room</figcaption>
+        <img src="assets/gallery/IMG_3150.jpeg" alt="Waiting room with rows of chairs, wood-look floors, and floor-to-ceiling windows facing the parking lot" loading="lazy" onerror="this.remove()" />
+        <figcaption><span>Fig. 02</span>Waiting room</figcaption>
       </figure>
       <figure class="g-item wide tall reveal reveal-delay-1">
         <img src="assets/gallery/IMG_3151.jpeg" alt="Waiting area with a reception window, a Welcome sign on the wall, and chairs along the windows" loading="lazy" onerror="this.remove()" />
-        <figcaption><span>Fig. 02</span>Reception &amp; waiting area</figcaption>
+        <figcaption><span>Fig. 03</span>Reception &amp; waiting area</figcaption>
       </figure>
       <figure class="g-item tall reveal">
         <img src="assets/gallery/IMG_3147.jpeg" alt="Exam room with an exam table, wall-mounted instruments, a chair, and a window with blinds" loading="lazy" onerror="this.remove()" />
-        <figcaption><span>Fig. 03</span>Exam room</figcaption>
+        <figcaption><span>Fig. 04</span>Exam room</figcaption>
       </figure>
       <figure class="g-item tall reveal reveal-delay-1">
         <img src="assets/gallery/IMG_3149.jpeg" alt="Exam room with an exam table, wall-mounted instruments, a chair, and a counter with a sink" loading="lazy" onerror="this.remove()" />
-        <figcaption><span>Fig. 04</span>Exam room</figcaption>
+        <figcaption><span>Fig. 05</span>Exam room</figcaption>
       </figure>
       <figure class="g-item wide tall reveal reveal-delay-2">
         <img src="assets/gallery/IMG_3148.jpeg" alt="Staff workspace with two rows of desks, computers, and phones" loading="lazy" onerror="this.remove()" />
-        <figcaption><span>Fig. 05</span>Staff workspace</figcaption>
+        <figcaption><span>Fig. 06</span>Staff workspace</figcaption>
       </figure>
     </div>
 
@@ -654,16 +618,11 @@
     <div class="footer-grid">
       <div>
         <div class="fmark">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
-            <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" stroke-width=".5"/>
-            <text x="50" y="56" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="400" fill="currentColor">EMG</text>
-            <text x="50" y="75" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="5" letter-spacing="1.5" fill="currentColor">CLARKSVILLE · TN</text>
-          </svg>
+          <img class="flogo" src="assets/logo-mark.png" alt="" width="200" height="192" loading="lazy" />
           <span class="name">Elite Medical Group</span>
         </div>
         <p class="f-about">
-          Elite Medical Group is a locally owned primary care practice in Clarksville, Tennessee. Dr. Parth Shah and Dr. Pankaj Shah offer family and internal medicine, and care for patients in the hospital and intensive care unit when needed.
+          Elite Medical Group is a locally owned primary care practice in Clarksville, Tennessee. Dr. Parth Shah and Dr. Pankaj Shah offer family and internal medicine, and work closely with surrounding hospitals if you are admitted.
         </p>
       </div>
       <div>
@@ -673,6 +632,7 @@
           <li><a href="index.html#physicians">Physicians</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html#staff">Our Staff</a></li>
           <li><a href="index.html#patients">For Patients</a></li>
         </ul>
       </div>
@@ -682,6 +642,7 @@
           <li>150 Alfredo Drive, Suite A</li>
           <li>Clarksville, TN 37042</li>
           <li><a href="tel:19312717373">931-271-7373</a></li>
+          <li class="f-fax">eFax 949-782-4892</li>
           <li class="f-email"><a href="mailto:staff@elite-medicalgroup.com">staff@elite-medicalgroup.com</a></li>
         </ul>
       </div>

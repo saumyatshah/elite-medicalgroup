@@ -2,7 +2,7 @@
 
 Website for Elite Medical Group — a primary care practice in Clarksville, Tennessee.
 
-Family medicine, internal medicine, hospital medicine, and critical care with Dr. Parth Shah and Dr. Pankaj Shah.
+Family medicine, internal medicine, and hospital medicine with Dr. Parth Shah and Dr. Pankaj Shah.
 
 ## Practice
 
@@ -34,7 +34,7 @@ Changes here that are not yet on `elite-medgroup.com`:
 - Practice intro rewritten: locally owned / physician-led, serving Montgomery County, Christian County, and Fort Campbell.
 - Practice heading "A team of board certified physicians" (live: "Two senior physicians").
 - Physician tenure stated as *since 2009* / *since 2007*; credentials simplified to "Board-Certified, Family Medicine" / "Internal Medicine".
-- Family medicine described as "from 12 and up"; Internal Medicine and Hospital Medicine descriptions shortened.
+- Family medicine described as "14 and older"; Internal Medicine and Hospital Medicine descriptions shortened.
 - Contact hours add the 12–1 pm lunch closure; the "After hours — Partner on-call" row and the "long memory" pull-quote are commented out.
 - Email corrected to `staff@elite-medicalgroup.com`.
 - Floating appointment-booking button (scheduling vendor iframe) in addition to the hero link.

@@ -6,7 +6,9 @@
 <title>Elite Medical Group | Primary Care Doctors in Clarksville, TN</title>
 <meta name="description" content="Elite Medical Group is locally owned primary care in Clarksville, TN. Family and internal medicine with Dr. Parth Shah and Dr. Pankaj Shah. Now accepting new patients." />
 <link rel="canonical" href="https://elite-medicalgroup.com/" />
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
 <script type="application/ld+json">
 {
@@ -23,7 +25,10 @@
       "@id": "https://elite-medicalgroup.com/#clinic",
       "name": "Elite Medical Group",
       "url": "https://elite-medicalgroup.com/",
+      "logo": "https://elite-medicalgroup.com/assets/logo-512.png",
+      "image": "https://elite-medicalgroup.com/assets/logo-512.png",
       "telephone": "+1-931-271-7373",
+      "faxNumber": "+1-949-782-4892",
       "email": "staff@elite-medicalgroup.com",
       "medicalSpecialty": "PrimaryCare",
       "address": {
@@ -236,7 +241,7 @@
   .nav-links a:hover::after{transform:scaleX(1);}
 
   .brand-mark{justify-self:center;display:flex;align-items:center;gap:10px;}
-  .brand-mark svg{width:44px;height:44px;color:var(--forest);}
+  .brand-mark .brand-logo{height:52px;width:auto;}
   .brand-mark .brand-name{
     font-family:var(--serif-display);font-weight:420;
     font-variation-settings:"opsz" 48, "SOFT" 40;
@@ -273,7 +278,7 @@
     .nav-inner{grid-template-columns:auto 1fr auto;gap:16px;padding:16px 22px;}
     .nav-links{display:none;}
     .brand-mark{justify-self:start;}
-    .brand-mark svg{width:34px;height:34px;}
+    .brand-mark .brand-logo{height:33px;}
     .brand-mark .brand-name{font-size:18px;}
     .nav-cta .phone{display:none;}
   }
@@ -691,7 +696,7 @@
   }
   .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:2;}
   .footer .fmark{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
-  .footer .fmark svg{width:48px;height:48px;color:#f4d9b5;}
+  .footer .fmark .flogo{width:60px;height:60px;padding:8px;background:var(--paper);border-radius:50%;object-fit:contain;}
   .footer .fmark .name{
     font-family:var(--serif-display);font-weight:420;
     font-variation-settings:"opsz" 48, "SOFT" 40;
@@ -707,6 +712,7 @@
   .footer a{color:rgba(241,232,214,.82);font-size:14.5px;}
   .footer a:hover{color:#f4d9b5;}
   .footer .f-email{word-break:break-word;font-size:13.5px;}
+  .footer .f-fax{font-size:14.5px;color:rgba(241,232,214,.82);}
   .footer-bottom{
     margin-top:72px;padding-top:24px;
     border-top:1px solid rgba(241,232,214,.18);
@@ -765,14 +771,7 @@
       <a href="#patients">Patients</a>
     </div>
     <a class="brand-mark" href="#top">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
-        <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" stroke-width=".5"/>
-        <text x="50" y="56" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="400" fill="currentColor">EMG</text>
-        <text x="50" y="75" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="5" letter-spacing="1.5" fill="currentColor">CLARKSVILLE · TN</text>
-        <path d="M18 50 L24 50" stroke="currentColor" stroke-width="0.8"/>
-        <path d="M76 50 L82 50" stroke="currentColor" stroke-width="0.8"/>
-      </svg>
+      <img class="brand-logo" src="assets/logo-mark.png" alt="" width="200" height="192" />
       <span class="brand-name">Elite Medical Group</span>
     </a>
     <div class="nav-cta">
@@ -794,7 +793,7 @@
     <div class="hero-grid">
       <div>
         <div class="hero-meta">
-          <span class="eyebrow">Family Medicine <span class="dot"></span> Internal Medicine <span class="dot"></span> Hospital &amp; Critical Care</span>
+          <span class="eyebrow">Family Medicine <span class="dot"></span> Internal Medicine <span class="dot"></span> Hospital Medicine</span>
         </div>
         <h1 class="reveal in">
           <span class="h1-brand">Elite Medical Group</span>
@@ -854,7 +853,7 @@
     <div class="hero-sub-row">
       <div class="kv"><div class="k">Specialties</div><div class="v"><em>Family</em> · Internal Medicine</div></div>
       <div class="kv"><div class="k">Experience</div><div class="v"><em>17+</em> years</div></div>
-      <div class="kv"><div class="k">Scope of Care</div><div class="v">Clinic · Hospital · Critical</div></div>
+      <div class="kv"><div class="k">Scope of Care</div><div class="v">Clinic · Hospital</div></div>
       <div class="kv"><div class="k">Location</div><div class="v">Clarksville, <em>TN</em></div></div>
     </div>
   </div>
@@ -863,8 +862,8 @@
 <!-- STRIP -->
 <div class="strip" aria-hidden="true">
   <div class="strip-track">
-    <span>Family Medicine <em class="star">✶</em> Internal Medicine <em class="star">✶</em> Hospital Medicine <em class="star">✶</em> Critical Care <em class="star">✶</em> Chronic Disease Management <em class="star">✶</em> Preventive Care <em class="star">✶</em> Wellness Visits <em class="star">✶</em> Medicare &amp; TennCare <em class="star">✶</em></span>
-    <span>Family Medicine <em class="star">✶</em> Internal Medicine <em class="star">✶</em> Hospital Medicine <em class="star">✶</em> Critical Care <em class="star">✶</em> Chronic Disease Management <em class="star">✶</em> Preventive Care <em class="star">✶</em> Wellness Visits <em class="star">✶</em> Medicare &amp; TennCare <em class="star">✶</em></span>
+    <span>Family Medicine <em class="star">✶</em> Internal Medicine <em class="star">✶</em> Hospital Medicine <em class="star">✶</em> Chronic Disease Management <em class="star">✶</em> Preventive Care <em class="star">✶</em> Wellness Visits <em class="star">✶</em> Medicare &amp; TennCare <em class="star">✶</em></span>
+    <span>Family Medicine <em class="star">✶</em> Internal Medicine <em class="star">✶</em> Hospital Medicine <em class="star">✶</em> Chronic Disease Management <em class="star">✶</em> Preventive Care <em class="star">✶</em> Wellness Visits <em class="star">✶</em> Medicare &amp; TennCare <em class="star">✶</em></span>
   </div>
 </div>
 
@@ -962,8 +961,8 @@
       <div class="srv reveal">
         <div class="srv-num">i.</div>
         <div class="srv-title">Family Medicine</div>
-        <div class="srv-desc">Everyday and long-term care for patients 12 and older, with one doctor who gets to know you and your family.</div>
-        <div class="srv-tag">Ages 12+</div>
+        <div class="srv-desc">Everyday and long-term care for patients 14 and older, with one doctor who gets to know you and your family.</div>
+        <div class="srv-tag">Ages 14+</div>
       </div>
       <div class="srv reveal reveal-delay-1">
         <div class="srv-num">ii.</div>
@@ -974,29 +973,23 @@
       <div class="srv reveal reveal-delay-2">
         <div class="srv-num">iii.</div>
         <div class="srv-title">Hospital Medicine</div>
-        <div class="srv-desc">If you are admitted, we see you in the hospital and work with the hospital team, so your care carries over between there and our office.</div>
+        <div class="srv-desc">If you are admitted, we work closely with surrounding hospitals for continuity of care.</div>
         <div class="srv-tag">Inpatient</div>
       </div>
       <div class="srv reveal reveal-delay-3">
         <div class="srv-num">iv.</div>
-        <div class="srv-title">Critical Care</div>
-        <div class="srv-desc">Treatment for critically ill adults in the ICU, working side by side with ICU staff, specialists, and families when it matters most.</div>
-        <div class="srv-tag">ICU</div>
-      </div>
-      <div class="srv reveal reveal-delay-4">
-        <div class="srv-num">v.</div>
         <div class="srv-title">Chronic Disease Management</div>
         <div class="srv-desc">Ongoing care for diabetes, high blood pressure, heart disease, COPD, and the conditions that often come with them.</div>
         <div class="srv-tag">Ongoing care</div>
       </div>
       <div class="srv reveal">
-        <div class="srv-num">vi.</div>
+        <div class="srv-num">v.</div>
         <div class="srv-title">Preventive &amp; Wellness Visits</div>
         <div class="srv-desc">Yearly physicals, Medicare wellness visits, screenings suited to your age, and immunizations, with time to ask your questions.</div>
         <div class="srv-tag">Prevention</div>
       </div>
       <div class="srv reveal">
-        <div class="srv-num">vii.</div>
+        <div class="srv-num">vi.</div>
         <div class="srv-title">In-Office Procedures</div>
         <div class="srv-desc">Skin biopsies and removals, joint injections, repair of cuts, earwax removal, and other common minor procedures, done right here in the office.</div>
         <div class="srv-tag">Same-day</div>
@@ -1009,7 +1002,7 @@
 <section class="quote-band">
   <div class="wrap-narrow">
     <blockquote class="quote">
-      Time to listen in the exam room, and hospital experience when you need it most.
+      Caring for You every step of the way.
     </blockquote>
     <span class="attr">Elite Medical Group · Clarksville, Tennessee</span>
   </div>
@@ -1148,6 +1141,10 @@
           <div class="cm-v"><a href="tel:19312717373">931-271-7373</a></div>
         </div>
         <div class="cm-block">
+          <div class="cm-k">By eFax</div>
+          <div class="cm-v">949-782-4892</div>
+        </div>
+        <div class="cm-block">
           <div class="cm-k">By Email</div>
           <div class="cm-v email"><a href="mailto:staff@elite-medicalgroup.com">staff@elite-medicalgroup.com</a></div>
         </div>
@@ -1179,16 +1176,11 @@
     <div class="footer-grid">
       <div>
         <div class="fmark">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
-            <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" stroke-width=".5"/>
-            <text x="50" y="56" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="400" fill="currentColor">EMG</text>
-            <text x="50" y="75" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="5" letter-spacing="1.5" fill="currentColor">CLARKSVILLE · TN</text>
-          </svg>
+          <img class="flogo" src="assets/logo-mark.png" alt="" width="200" height="192" loading="lazy" />
           <span class="name">Elite Medical Group</span>
         </div>
         <p class="f-about">
-          Elite Medical Group is a locally owned primary care practice in Clarksville, Tennessee. Dr. Parth Shah and Dr. Pankaj Shah offer family and internal medicine, and care for patients in the hospital and intensive care unit when needed.
+          Elite Medical Group is a locally owned primary care practice in Clarksville, Tennessee. Dr. Parth Shah and Dr. Pankaj Shah offer family and internal medicine, and work closely with surrounding hospitals if you are admitted.
         </p>
       </div>
       <div>
@@ -1198,6 +1190,7 @@
           <li><a href="#physicians">Physicians</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html#staff">Our Staff</a></li>
           <li><a href="#patients">For Patients</a></li>
         </ul>
       </div>
@@ -1207,6 +1200,7 @@
           <li>150 Alfredo Drive, Suite A</li>
           <li>Clarksville, TN 37042</li>
           <li><a href="tel:19312717373">931-271-7373</a></li>
+          <li class="f-fax">eFax 949-782-4892</li>
           <li class="f-email"><a href="mailto:staff@elite-medicalgroup.com">staff@elite-medicalgroup.com</a></li>
         </ul>
       </div>

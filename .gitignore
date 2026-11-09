@@ -5,3 +5,11 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Original full-size photos: large, and some contain GPS location data.
+# Only the resized copies (assets/staff/*-shah.jpg, assets/gallery/IMG_3146.jpeg, assets/logo-*.png, ...) are published.
+/logo.PNG
+/staff1 Yanelys Martinez  MEdical Assistant.jpg
+/assets/IMG_31*.jpeg
+/assets/staff/IMG_*
+/assets/gallery/IMG_3146 outside.jpeg
